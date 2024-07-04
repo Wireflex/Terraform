@@ -7,6 +7,11 @@ resource "aws_instance" "webserver" {
   count         = 1                                                # Количество 
   vpc_security_group_ids = [aws_security_group.webserver.id]       # Название security group(webserver) может быть другое,это не instance !!!
   depends_on = [aws_instance.my_server_db]                         # Запустится после инста my_server_db
+  tags = {
+    Name    = "My Server"
+    Owner   = "Wireflex"
+    Project = "Terraform practice"
+   }
   }
 
 #=================================================================================#
