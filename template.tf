@@ -6,7 +6,7 @@ resource "aws_instance" "webserver" {
   key_name      = "private-ssh-key"
 
   vpc_security_group_ids = [aws_security_group.webserver.id]
-
+  user_data_replace_on_change = true
   user_data = templatefile("user_data.sh.tpl", {
     f_name = "Nikita",
     l_name = "Utyaganov",
