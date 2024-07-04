@@ -28,9 +28,9 @@ provider "aws" {
   region     = "ca-central-1"
   access_key = "xxxxxxxxxxxx"
   secret_key = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
-
+Либо ключи, либо роль
   assume_role {
-    role_arn     = "arn:aws:iam::1234567890:role/RemoteAdministrators"
+    role_arn     = "arn:aws:iam::1234567890(айди акка):role/RemoteAdministrators"
     session_name = "TERRAFROM_SESSION"
   }
 }
