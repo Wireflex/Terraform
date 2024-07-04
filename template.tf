@@ -1,4 +1,5 @@
 Эта штука нужна для заполнения index.html в файле user_data.sh.tpl( который в репозитории user_data.sh )
+
 resource "aws_instance" "webserver" {
   ami           = "ami-0a3041ff14fb6e2be"
   instance_type = "t2.micro"
