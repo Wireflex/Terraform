@@ -24,7 +24,7 @@ resource "aws_instance" "webserver" {
   key_name      = "ssh-private-key"
 
   vpc_security_group_ids = [aws_security_group.webserver.id]
-
+  user_data_replace_on_change = true
   user_data = <<-EOF
 #!/bin/bash
 yum update -y
