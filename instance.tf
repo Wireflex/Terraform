@@ -31,6 +31,21 @@ systemctl enable httpd
 }
 #=================================================================================#
 
+Переменные в файле variables.tf
+
+resource "aws_instance" "web_server" {
+  ami           = "ami-0a3041ff14fb6e2be"
+  instance_type = var.instance_type
+  key_name      = "ssh-private-key"
+  vpc_security_group_ids = [aws_security_group.webserver.id]
+
+  tags = merge(var.common_tags, { Name = "${var.common_tags["Environment"]} Server Build by Terraform" })      # сливаем/суммируем(merge) common_tags из variables.tf + новую переменную Name
+  
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+#=================================================================================#
 Lifecycles
 
   lifecycle {
