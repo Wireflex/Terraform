@@ -6,6 +6,7 @@ resource "aws_instance" "webserver" {
   key_name      = "ssh-private-key"                                # private ssh key
   count         = 1                                                # Количество 
   vpc_security_group_ids = [aws_security_group.webserver.id]       # Название security group(webserver) может быть другое,это не instance !!!
+  depends_on = [aws_instance.my_server_db]                         # Запустится после инста my_server_db
   }
 
 #=================================================================================#
@@ -28,3 +29,18 @@ systemctl start httpd
 systemctl enable httpd
   EOF
 }
+#=================================================================================#
+
+Lifecycles
+
+  lifecycle {
+    prevent_destroy = true
+  }
+
+  lifecycle {
+    ignore_changes = ["ami", "user_data"]
+  }
+
+  lifecycle {
+    create_before_destroy = true
+  }
