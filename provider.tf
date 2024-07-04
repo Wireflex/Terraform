@@ -14,7 +14,8 @@ provider "aws" {
 provider "aws" {}
 ```
 #=================================================================================# 
-Выебоны с [переменными](  )
+
+Использование [переменных](https://github.com/Wireflex/Terraform/blob/main/variables.md)
 ```
 provider "aws" {
   region = var.region
