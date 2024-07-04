@@ -6,7 +6,7 @@
 
 В качестве написания кода, для удобства, можно использовать [Visual Studio Code](https://code.visualstudio.com/download) прям на винде, копируя код, либо сохраняя и загружая через Mobaxterm, + нужен HashiCorp Terraform плагин ( File-Preferences-Settings-Text Editor-Formatting-Format of save )
 
-Инфу, примеры групп, инстансов итд можно смотреть в [Terraform Registry](https://registry.terraform.io/) работает с vpn
+Инфу, примеры групп, инстансов итд можно смотреть в [Terraform Registry](https://registry.terraform.io/) , работает с vpn
 
 ### Устанавливаем AWS Credentials
 ```
@@ -16,7 +16,7 @@ export AWS_DEFAULT_REGION="blablabla"
 ```
 или 
 
-```aws configure``` и вводим ключи и регион, полученные при создании пользователя в AWS ( можно их потом добавить/поменять юзеру )
+```aws configure``` и вводим ключи и регион, полученные при создании пользователя в AWS
 
 ### Команды Terraform
 ```
