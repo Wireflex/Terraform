@@ -15,7 +15,7 @@ provider "aws" {}
 ```
 #=================================================================================# 
 
-Использование [переменных](https://github.com/Wireflex/Terraform/blob/main/variables.md)
+Использование переменных(сами переменные в файле variables.tf)
 ```
 provider "aws" {
   region = var.region
