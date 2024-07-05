@@ -64,3 +64,6 @@ Lifecycles
   lifecycle {
     create_before_destroy = true
   }
+#=================================================================================#
+Пересоздать ресурс
+terraform apply -replace aws_instance.node2
