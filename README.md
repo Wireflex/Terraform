@@ -18,7 +18,7 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ```aws configure``` и вводим ключи и регион, полученные при создании пользователя в AWS
 
-## Команды Terraform
+## Terraform Commands
 ```
 terraform init      # в директории с .tf файлом перед деплоем, скачивает бинарник для работы с AWS(либо Google,Azure итд)
 ```
