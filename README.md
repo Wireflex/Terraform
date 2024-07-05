@@ -34,7 +34,7 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ## Terraform State Commands
 
-```terraform state show```   # Показывает стейт ресурса ( aws_instance.werserver, к примеру ) Read only
+```terraform state show```   # Показывает стейт ресурса ( aws_instance.webserver, к примеру ) Read only
 
 ```terraform state list```   # Показывает все ресурсы в .tfstate файле. Read only
 
