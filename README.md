@@ -31,3 +31,38 @@ terraform apply     # создание ресурсов, создаёт terrafor
 ```
 terraform destroy   # уничтожение ресурсов
 ```
+### Terraform State Commands
+```
+terraform state show   # Показывает стейт ресурса ( aws_instance.werserver, к примеру ) Read only
+```
+```
+terraform state list   # Показывает все ресурсы в .tfstate файле. Read only
+```
+```
+terraform state pull   # Читает весь .tfstate и выводит на экран. Read only
+```
+```
+terraform state rm    # Удаляет ресурс. Attention !!!
+```
+```
+terraform state mv    # Двигает ресурс. Attention !!! terraform state mv -state-out="terraform.tfstate" aws_eip.prod-ip1 aws_eip.prod-ip1 (перенос из ремоут в локальный с тем же именем)
+```
+```
+terraform state push  # Перезаписывает .tfstate, который был. Attention !!!
+```
+### Terraform Workspace Commands ( чисто для теста, что-то типо веток гита )
+```
+terraform workspace show       # показывает текущий воркспейс( default )
+```
+```
+terraform workspace list       # показывает все воркспейсы
+```
+```
+terraform workspace new        # создайт воркспейс
+```
+```
+terraform workspace select     # переход на воркспейс
+```
+```
+terraform workspace delete     # удаление воркспейса
+```
