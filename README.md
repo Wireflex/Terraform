@@ -6,7 +6,7 @@
 
 В качестве написания кода, для удобства, можно использовать [Visual Studio Code](https://code.visualstudio.com/download) прям на винде, копируя код, либо сохраняя и загружая через Mobaxterm, + нужен HashiCorp Terraform плагин ( File-Preferences-Settings-Text Editor-Formatting-Format of save )
 
-Инфу, примеры групп, инстансов итд можно смотреть в [Terraform Registry](https://registry.terraform.io/) , работает с vpn
+Инфу, примеры групп, инстансов, параметры дата сурс итд можно смотреть в [Terraform Registry](https://registry.terraform.io/) , работает с vpn
 
 ### Устанавливаем AWS Credentials
 ```
