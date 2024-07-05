@@ -119,7 +119,7 @@ resource "aws_instance" "webserver" {
   ami           = data.aws_ami.latest_ubuntu.id
   instance_type = var.instance_type
   subnet_id     = aws_subnet.prod_subnet.id
-  key_name      = "wireflex-key-frankfurt"
+  key_name      = "private-ssh-key"
   count         = 1 
   vpc_security_group_ids = [aws_security_group.webserver.id]             # Связали инст с группой
   user_data_replace_on_change = true
