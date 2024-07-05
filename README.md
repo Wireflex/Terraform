@@ -31,6 +31,12 @@ terraform apply     # создание ресурсов, создаёт terrafor
 ```
 terraform destroy   # уничтожение ресурсов
 ```
+```
+terraform validate  # проверка синтаксиса конфигурационных файлов
+```
+```
+terraform refresh   # обновление данных о существующих ресурсах в аккаунте AWS
+```
 ### Terraform State Commands
 ```
 terraform state show   # Показывает стейт ресурса ( aws_instance.werserver, к примеру ) Read only
