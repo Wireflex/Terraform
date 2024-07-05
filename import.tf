@@ -1,6 +1,6 @@
 Импортим другой ресурс
 
-# terraform import aws_instance.node1 i-0417da3dfcfd6e059
+terraform import aws_instance.node1 i-0417da3dfcfd6e059
 либо
 resource "aws_instance" "node1" {
 }
