@@ -46,7 +46,7 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ```terraform state push```  # Перезаписывает .tfstate, который был. Attention !!!
 
-## Terraform Workspace Commands ( чисто для теста, что-то типо веток гита )
+## Terraform Workspace Commands  ( чисто для теста,что-то типо веток гита )
 
 ```terraform workspace show```       # показывает текущий воркспейс( default )
 
