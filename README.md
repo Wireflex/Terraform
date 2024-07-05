@@ -18,7 +18,7 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ```aws configure``` и вводим ключи и регион, полученные при создании пользователя в AWS
 
-### Команды Terraform
+## Команды Terraform
 ```
 terraform init      # в директории с .tf файлом перед деплоем, скачивает бинарник для работы с AWS(либо Google,Azure итд)
 ```
@@ -37,7 +37,7 @@ terraform validate  # проверка синтаксиса конфигурац
 ```
 terraform refresh   # обновление данных о существующих ресурсах в аккаунте AWS
 ```
-### Terraform State Commands
+## Terraform State Commands
 ```
 terraform state show   # Показывает стейт ресурса ( aws_instance.werserver, к примеру ) Read only
 ```
@@ -56,7 +56,7 @@ terraform state mv    # Двигает ресурс. Attention !!! terraform sta
 ```
 terraform state push  # Перезаписывает .tfstate, который был. Attention !!!
 ```
-### Terraform Workspace Commands ( чисто для теста, что-то типо веток гита )
+## Terraform Workspace Commands ( чисто для теста, что-то типо веток гита )
 ```
 terraform workspace show       # показывает текущий воркспейс( default )
 ```
