@@ -12,7 +12,7 @@ terraform {
   }
 }
 
-# Создание vpc, дальше сабнет из неё создадим
+# Создание vpc
 resource "aws_vpc" "prod_vpc" {
   cidr_block = "10.10.1.0/24"
   enable_dns_support = true
