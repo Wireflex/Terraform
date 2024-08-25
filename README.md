@@ -5,7 +5,7 @@
 
 или же [Зеркало](https://mirror.selectel.ru/3rd-party/hashicorp-releases/terraform/?_gl=1*g62yz3*_gcl_au*MjAxODM3ODkzMy4xNzEyMDkyODA4*_ga*MTk5NDU1NjA3Ni4xNzEyMDkyODA4*_ga_H3R3VJH01B*MTcxOTU2OTk1NS4xOS4wLjE3MTk1Njk5NTUuNjAuMC4w) , но вообще оно юзлесс, т.к на ру-сервах терраформ не работает
 
-В качестве написания кода, для удобства, можно использовать [Visual Studio Code](https://code.visualstudio.com/download) прям на винде, копируя код, либо сохраняя и загружая через Mobaxterm, + нужен HashiCorp Terraform плагин ( File-Preferences-Settings-Text Editor-Formatting-Format of save )
+В качестве написания кода, для удобства, можно использовать [Visual Studio Code](https://code.visualstudio.com/download) + нужен HashiCorp Terraform плагин ( File-Preferences-Settings-Text Editor-Formatting-Format of save )
 
 Инфу, примеры групп, инстансов, параметры дата сурс итд можно смотреть в [Terraform Registry](https://registry.terraform.io/) , работает с vpn
 
