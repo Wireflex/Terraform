@@ -39,3 +39,10 @@ EOF
 
 systemctl start httpd
 systemctl enable httpd
+
+
+#================================================================================#
+
+можно протестить через ```terraform console```
+и ввести ```file("user_data.sh.tpl```
+вывод: контент этого скрипта
