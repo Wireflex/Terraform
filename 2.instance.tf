@@ -1,3 +1,5 @@
+это серверный ресурс, предоставляемый сторонними облачными сервисами (Виртуальная машина)
+
 Дефолт
 
 resource "aws_instance" "webserver" {
@@ -50,7 +52,9 @@ resource "aws_instance" "web_server" {
     create_before_destroy = true
   }
 }
+
 #=================================================================================#
+
 Lifecycles
 
   lifecycle {
@@ -64,6 +68,9 @@ Lifecycles
   lifecycle {
     create_before_destroy = true
   }
+
 #=================================================================================#
+
 Пересоздать ресурс
+
 terraform apply -replace aws_instance.node2
