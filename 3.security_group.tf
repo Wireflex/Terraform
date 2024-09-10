@@ -1,4 +1,4 @@
-Перечисление каждого tcp
+Перечисление каждого порта
 
 resource "aws_security_group" "webserver" {
   name = "webserver group"
