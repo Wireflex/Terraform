@@ -1,3 +1,5 @@
+# шаблонизатор-генератор
+
 Эта штука нужна для заполнения index.html в файле user_data.sh.tpl( который в репозитории user_data.sh )
 
 resource "aws_instance" "webserver" {
