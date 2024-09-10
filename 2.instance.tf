@@ -45,6 +45,7 @@ resource "aws_instance" "web_server" {
   instance_type = var.instance_type
   key_name      = "ssh-private-key"
   vpc_security_group_ids = [aws_security_group.webserver.id]
+  user_data = file("./user_data.sh")
 
   tags = merge(var.common_tags, { Name = "${var.common_tags["Environment"]} Server Build by Terraform" })      # сливаем/суммируем(merge) common_tags из variables.tf + новую переменную Name
   
