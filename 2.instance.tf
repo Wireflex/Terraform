@@ -63,7 +63,7 @@ Lifecycles
   }
 
   lifecycle {
-    ignore_changes = ["ami", "user_data"]
+    ignore_changes = ["ami", "user_data"]     # если этот параметр заставляет терраформ сделать дестрой - не делать этого
   }
 
   lifecycle {
