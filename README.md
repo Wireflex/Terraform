@@ -52,6 +52,8 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ```terraform refresh```   # обновление данных о существующих ресурсах в аккаунте AWS
 
+```terraform console```   # для теста, file("user_data.sh.tpl") выдаст контент скрипта 
+
 ## Terraform State Commands
 
 ```terraform state show```   # Показывает стейт ресурса ( aws_instance.webserver, к примеру ) Read only
