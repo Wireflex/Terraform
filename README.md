@@ -1,11 +1,17 @@
 ![image](https://github.com/user-attachments/assets/587a3427-bf22-4804-956e-639f847e2f2d)
 
-
 [Install Terraform](https://developer.hashicorp.com/terraform/install#linux) ```wget``` - ```unzip``` - ```sudo mv terraform /bin/``` - ```terraform --version``` ( обновить - по сути сделать тож самое, заменив старую версию )
 
-или же [Зеркало](https://mirror.selectel.ru/3rd-party/hashicorp-releases/terraform/?_gl=1*g62yz3*_gcl_au*MjAxODM3ODkzMy4xNzEyMDkyODA4*_ga*MTk5NDU1NjA3Ni4xNzEyMDkyODA4*_ga_H3R3VJH01B*MTcxOTU2OTk1NS4xOS4wLjE3MTk1Njk5NTUuNjAuMC4w) , но вообще оно юзлесс, т.к на ру-сервах терраформ не работает
+[Зеркало](https://mirror.selectel.ru/3rd-party/hashicorp-releases/terraform/?_gl=1*g62yz3*_gcl_au*MjAxODM3ODkzMy4xNzEyMDkyODA4*_ga*MTk5NDU1NjA3Ni4xNzEyMDkyODA4*_ga_H3R3VJH01B*MTcxOTU2OTk1NS4xOS4wLjE3MTk1Njk5NTUuNjAuMC4w) , но вообще оно юзлесс, т.к на ру-сервах терраформ не работает
 
-В качестве написания кода, для удобства, можно использовать [Visual Studio Code](https://code.visualstudio.com/download) + нужен HashiCorp Terraform плагин ( File-Preferences-Settings-Text Editor-Formatting-Format of save )
+или же просто 
+```
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+```
+
+В качестве написания кода, для удобства, можно использовать [Visual Studio Code](https://code.visualstudio.com/download) + нужен HashiCorp Terraform плагин ( File-Preferences-Settings-Text Editor-Formatting-Format of save ) язык - HCL ( Hashicorp Configuration Language )
 
 Инфу, примеры групп, инстансов, параметры дата сурс итд можно смотреть в [Terraform Registry](https://registry.terraform.io/) , работает с vpn
 
