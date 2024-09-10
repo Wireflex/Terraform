@@ -54,6 +54,8 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ```terraform console```   # для теста, file("user_data.sh.tpl") выдаст контент скрипта 
 
+```terraform show```      # читает tfstate файл и отображает его
+
 ## Terraform State Commands
 
 ```terraform state show```   # Показывает стейт ресурса ( aws_instance.webserver, к примеру ) Read only
