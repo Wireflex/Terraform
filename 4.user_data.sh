@@ -1,3 +1,5 @@
+# набор команд, который запустится при создании инстанса
+
 #!/bin/bash
 yum update -y
 yum install httpd -y
