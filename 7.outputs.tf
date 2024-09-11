@@ -1,4 +1,5 @@
 #  вывод в терминале после выполнения ```terraform apply```
+
 смотреть в Attribute References в документации по объектам терраформа
 
 output "my_web_site_ip" {
