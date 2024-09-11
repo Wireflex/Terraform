@@ -25,3 +25,10 @@ variable "common_tags" {
     Environment = "development"
   }
 }
+
+
+#==============================================================#
+
+так же можно экспортить как переменную окружения
+
+export var_region=eu-central-1
