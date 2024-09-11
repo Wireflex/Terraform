@@ -1,3 +1,5 @@
+# переменные, чтоб в основном файле всё не указывать, и легче было менять их в 1 месте
+
 variable "region" {
   description = "Please Enter AWS Region to deploy Server"
   type        = string
