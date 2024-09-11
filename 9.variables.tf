@@ -32,3 +32,4 @@ variable "common_tags" {
 так же можно экспортить как переменную окружения
 
 export var_region=eu-central-1
+unset var_region    # убрать переменную
