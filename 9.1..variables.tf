@@ -33,3 +33,6 @@ variable "common_tags" {
 
 export var_region=eu-central-1
 unset var_region    # убрать переменную
+
+
+эти значения могут быть переопределены в terraform.tfvars
