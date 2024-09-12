@@ -6,12 +6,11 @@ provider "aws" {
 
 module "vpc-default" {  # просто название
   source = "../aws_network"  # путь к модулю
-  //  source               = "git@github.com:adv4000/terraform-modules.git//aws_network"
+  //  source               = "git@github.com:wireflex/terraform-modules.git//aws_network"   # можно так же удаленно хранить эти модули, на гитхабе, к примеру
 }
 
 module "vpc-dev" {
   source = "../modules/aws_network"
-  //  source               = "git@github.com:adv4000/terraform-modules.git//aws_network"
   env                  = "dev"                                   # к НЕдефолтному модулю можно переслать параметры, которые перепишут дефолтные значения, то есть env тут будет другой, в сети ниже 3ий, итд
   vpc_cidr             = "10.100.0.0/16"
   public_subnet_cidrs  = ["10.100.1.0/24", "10.100.2.0/24"]
@@ -20,7 +19,6 @@ module "vpc-dev" {
 
 module "vpc-prod" {
   source = "../modules/aws_network"
-  // source               = "git@github.com:adv4000/terraform-modules.git//aws_network"
   env                  = "prod"
   vpc_cidr             = "10.10.0.0/16"
   public_subnet_cidrs  = ["10.10.1.0/24", "10.10.2.0/24", "10.10.3.0/24"]
@@ -29,7 +27,6 @@ module "vpc-prod" {
 
 module "vpc-test" {
   source = "../modules/aws_network"
-  // source               = "git@github.com:adv4000/terraform-modules.git//aws_network"
   env                  = "staging"
   vpc_cidr             = "10.10.0.0/16"
   public_subnet_cidrs  = ["10.10.1.0/24", "10.10.2.0/24"]
