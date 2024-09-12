@@ -52,6 +52,8 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ```terraform refresh```   # обновление данных о существующих ресурсах в аккаунте AWS
 
+```terraform output```    # просто выведет outputs, без создания других ресурсов
+
 ```terraform console```   # для теста, file("user_data.sh.tpl") выдаст контент скрипта 
 
 ```terraform show```      # читает tfstate файл и отображает его
