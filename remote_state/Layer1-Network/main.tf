@@ -34,10 +34,10 @@ resource "aws_internet_gateway" "main" {
 
 
 resource "aws_subnet" "public_subnets" {
-  count                   = length(var.public_subnet_cidrs)
+  count                   = length(var.public_subnet_cidrs)   # в variables.tf 2 шт. cidrs
   vpc_id                  = aws_vpc.main.id
-  cidr_block              = element(var.public_subnet_cidrs, count.index)
-  availability_zone       = data.aws_availability_zones.available.names[count.index]
+  cidr_block              = element(var.public_subnet_cidrs, count.index)   # тут уже названия тех 2х cidrs из variables.tf
+  availability_zone       = data.aws_availability_zones.available.names[count.index]   # в каждой availability_zone создадим
   map_public_ip_on_launch = true
   tags = {
     Name = "${var.env}-puvlic-${count.index + 1}"
@@ -45,7 +45,7 @@ resource "aws_subnet" "public_subnets" {
 }
 
 
-resource "aws_route_table" "public_subnets" {
+resource "aws_route_table" "public_subnets" {          # создаём aws_route_table для выхода в интернет
   vpc_id = aws_vpc.main.id
   route {
     cidr_block = "0.0.0.0/0"
@@ -56,7 +56,7 @@ resource "aws_route_table" "public_subnets" {
   }
 }
 
-resource "aws_route_table_association" "public_routes" {
+resource "aws_route_table_association" "public_routes" {         # приатачиваем созданный table к subnets
   count          = length(aws_subnet.public_subnets[*].id)
   route_table_id = aws_route_table.public_subnets.id
   subnet_id      = element(aws_subnet.public_subnets[*].id, count.index)
