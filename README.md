@@ -89,3 +89,7 @@ export AWS_DEFAULT_REGION="blablabla"
 ```terraform workspace select```dota   # переход на воркспейс 'dota'
 
 ```terraform workspace delete```dota   # удаление воркспейса 'dota'
+
+## [Terraform Cloud](https://app.terraform.io/app/organizations)
+
+можно привязать SCM к клауду, и в случае GitOps будет чем-то вроде ci/cd инструмента, с pull-request итд
