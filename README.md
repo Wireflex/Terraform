@@ -40,6 +40,8 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ## Terraform Commands
 
+основные команды Terraform
+
 ```terraform init```      # в директории с .tf файлом перед деплоем, скачивает бинарник для работы с клауд провайдером
 
 ```terraform plan```      # проверяет и показывает,что сделает в случае apply
@@ -60,6 +62,8 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ## Terraform State Commands
 
+используются для управления состоянием инфраструктуры, которое хранится в файле terraform.tfstate. Этот файл содержит всю информацию о ресурсах, которые были созданы и управляются Terraform.
+
 ```terraform state show```   # Показывает стейт ресурса ( aws_instance.webserver, к примеру ) Read only
 
 ```terraform state list```   # Показывает все ресурсы в .tfstate файле. Read only
@@ -73,6 +77,8 @@ export AWS_DEFAULT_REGION="blablabla"
 ```terraform state push```  # Перезаписывает .tfstate, который был. Attention !!!
 
 ## Terraform Workspace Commands
+
+команды для тестирования
 
 ```terraform workspace show```       # показывает текущий воркспейс( default )
 
