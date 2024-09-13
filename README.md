@@ -78,14 +78,14 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ## Terraform Workspace Commands
 
-команды для тестирования
+команды для тестирования, после создания workspace появляется директория env: , и там хранятся все воркспейсы
 
-```terraform workspace show```       # показывает текущий воркспейс( default )
+```terraform workspace show```         # показывает текущий воркспейс( default )
 
-```terraform workspace list```       # показывает все воркспейсы
+```terraform workspace list```         # показывает все воркспейсы
 
-```terraform workspace new```        # создайт воркспейс
+```terraform workspace new```dota      # создайт воркспейс 'dota'
 
-```terraform workspace select```     # переход на воркспейс
+```terraform workspace select```dota   # переход на воркспейс 'dota'
 
-```terraform workspace delete```     # удаление воркспейса
+```terraform workspace delete```dota   # удаление воркспейса 'dota'
