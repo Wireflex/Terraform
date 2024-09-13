@@ -44,7 +44,7 @@ export AWS_DEFAULT_REGION="blablabla"
 
 ```terraform plan```      # проверяет и показывает,что сделает в случае apply
 
-```terraform apply```     # создание ресурсов, создаёт terraform.tfstate фай !!! и если его удалить, терраформ не с чем будет сравнивать текущее состояние, и он просто создаст ресурс еще раз !!!
+```terraform apply```     # создание ресурсов, создаёт terraform.tfstate файл, для пересоздания ресурса - добавляем ```-replace aws_instance.myweb1
 
 ```terraform destroy```   # уничтожение ресурсов
 
