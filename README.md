@@ -1,5 +1,7 @@
 ![image](https://github.com/user-attachments/assets/587a3427-bf22-4804-956e-639f847e2f2d)
 
+это система управления состоянием инфраструктуры, придерживающаяся подхода идемпотентности и декларативного стиля управления.
+
 [Install Terraform](https://developer.hashicorp.com/terraform/install#linux) ```wget``` - ```unzip``` - ```sudo mv terraform /bin/``` - ```terraform --version``` ( обновить - по сути сделать тож самое, заменив старую версию )
 
 [Зеркало](https://mirror.selectel.ru/3rd-party/hashicorp-releases/terraform/?_gl=1*g62yz3*_gcl_au*MjAxODM3ODkzMy4xNzEyMDkyODA4*_ga*MTk5NDU1NjA3Ni4xNzEyMDkyODA4*_ga_H3R3VJH01B*MTcxOTU2OTk1NS4xOS4wLjE3MTk1Njk5NTUuNjAuMC4w) , но вообще оно юзлесс, т.к на ру-сервах терраформ не работает
